@@ -23,7 +23,7 @@ with open(poll_csv) as csv_file:
         if cand_name not in cand_list:
             cand_list.append(cand_name)
             cand_votes[cand_name] = 0
-        
+
         cand_votes[cand_name] = cand_votes[cand_name] + 1
     
     for cand in cand_votes:
@@ -39,12 +39,12 @@ with open(poll_csv) as csv_file:
         print(percentage)
 
     
-        print(f'Election Results')
-        print(f'-------------------------')
-        print(f"Total Votes: {total_votes:,}")
-        print(f'-------------------------')
-        print(percentage)
-        print(f'-------------------------')
+        # print(f'Election Results')
+        # print(f'-------------------------')
+        # print(f"Total Votes: {total_votes:,}")
+        # print(f'-------------------------')
+        # print(percentage)
+        # print(f'-------------------------')
 
 
     
@@ -70,4 +70,4 @@ Total Votes: {total_votes}
 Winner: 
 -------------------------'''
 
-# print(output)
+print(output)
