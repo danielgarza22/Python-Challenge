@@ -62,4 +62,4 @@ output += f'\n---------------------------------\n'
 
 # Create a file and save PyBank Analysis to a file
 print(output)
-# open('Analysis/PyPoll_Analysis.txt','w').write(output)
+open('Analysis/PyPoll_Analysis.txt','w').write(output)
