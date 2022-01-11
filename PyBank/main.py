@@ -45,18 +45,19 @@ with open(budget_csv) as csv_file:
 
 # Create analysis report
 analysis_output = f'''
-Financial Analysis
-----------------------------
+***\t\t  Financial Analysis  \t\t***
+=====================================================
 Total Months: {months}
 Total: ${total:,}
-Average  Change: ${total_ch/(months-1)}
+Average Change: ${total_ch/(months-1)}
 Greatest Increase in Profits: {inc[0]} (${inc[1]:,})
-Greatest Decrease in Profits: {dec[0]} (${dec[1]:,})'''
+Greatest Decrease in Profits: {dec[0]} (${dec[1]:,})
+=====================================================\n'''
 
 #print analysis report
 print(analysis_output)
 
 # Create a file and save PyBank Analysis to a file
 analysis_file = os.path.join("Analysis","PyBank_Analysis.txt")
-with open(analysis_file,"a") as f:
-    print(output, file=f)
+with open(analysis_file,"w") as f:
+    print(analysis_output, file=f)
